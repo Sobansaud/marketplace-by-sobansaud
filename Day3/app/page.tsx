@@ -8,6 +8,7 @@ import Last from "@/components/last";
 export default function Home() {
   return (
     <div>
+      
        <Hero />
         <Mid />
         <Forth />

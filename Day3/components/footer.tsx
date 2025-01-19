@@ -28,21 +28,29 @@ const Footer: React.FC = () => {
                Shop
               </Link>
             </li>
-           
             <li>
-              <Link href="/feedback" passHref className="text-md font-bold text-gray-600 hover:text-black">
-                FeedBack
+              <Link href="/cart" passHref className="text-md font-bold text-gray-600 hover:text-black">
+                Cart
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" passHref className="text-md font-bold text-gray-600 hover:text-black">
+                Contact
               </Link>
               
             </li>
             <li>
-              <Link href="/faq" passHref className="text-md font-bold text-gray-600 hover:text-black">
-                FAQ
+              <Link href="/checkout" passHref className="text-md font-bold text-gray-600 hover:text-black">
+                CheckOut
               </Link>
-              
-            </li>
 
-            
+              
+            </li>
+            <li>
+             <Link href="/compare" className="text-md font-bold text-gray-600 hover:text-black">
+                        Comparison
+                      </Link>
+                      </li>
           </ul>
         </nav>
 
