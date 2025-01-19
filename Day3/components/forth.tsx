@@ -1,7 +1,4 @@
 
-
-
-
 import React from "react";
 import Image from "next/image";
 import { Button } from "./ui/button";
@@ -34,5 +31,6 @@ const Forth = () => {
 };
 
 export default Forth;
+
 
 
