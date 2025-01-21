@@ -1,9 +1,7 @@
 
-"use client";
-import { Heart, Search, ShoppingCart, Menu } from "lucide-react";
-import { User } from "lucide-react";
+"use client"
+import { Heart, Search, ShoppingCart, Menu, User } from "lucide-react";
 import Link from "next/link";
-import React from "react";
 import { Button } from "./ui/button";
 import { useCart } from "@/components/CartContext"; // Assuming you have CartContext
 import { useWishlist } from "@/components/WishlistContext"; // Import WishlistContext
@@ -49,8 +47,6 @@ export const Navbar = () => {
           <Button variant="outline" size="icon" className="rounded-full">
             <User />
           </Button>
-
-          {/* Wishlist Icon with dynamic count */}
           <Link href="/wishlist">
             <Button variant="outline" size="icon" className="rounded-full relative">
               <Heart />
@@ -62,13 +58,8 @@ export const Navbar = () => {
             </Button>
           </Link>
 
-          {/* Shopping Cart with dynamic count */}
-          <Link href="/cart">  {/* Navigate to Cart Page */}
-            <Button
-              variant="outline"
-              size="icon"
-              className="rounded-full relative"
-            >
+          <Link href="/cart">
+            <Button variant="outline" size="icon" className="rounded-full relative">
               <ShoppingCart />
               {cartCount > 0 && (
                 <span className="absolute top-0 right-0 text-xs font-bold text-white bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">
@@ -106,7 +97,6 @@ export const Navbar = () => {
                 Contact
               </Link>
               <div className="flex mt-6 gap-4">
-                {/* Wishlist Icon */}
                 <Link href="/wishlist">
                   <Button variant="outline" size="icon" className="rounded-full">
                     <Heart />
@@ -117,14 +107,8 @@ export const Navbar = () => {
                     )}
                   </Button>
                 </Link>
-
-                {/* Shopping Cart Icon */}
                 <Link href="/cart">
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="rounded-full relative"
-                  >
+                  <Button variant="outline" size="icon" className="rounded-full relative">
                     <ShoppingCart />
                     {cartCount > 0 && (
                       <span className="absolute top-0 right-0 text-xs font-bold text-white bg-red-500 rounded-full w-5 h-5 flex items-center justify-center">

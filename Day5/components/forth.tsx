@@ -4,7 +4,6 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
 
-
 const Forth = () => {
   return (
     <div className="text-center">
@@ -14,16 +13,11 @@ const Forth = () => {
           <Image key={index} height={150} width={150} alt={`Product ${index}`} src={`/${src}`} />
         ))}
       </div>
-      <div className="flex flex-wrap justify-center gap-10 mt-6">
-        {["me9.png", "me1.jpg", "me7.jpg", "me9.png"].map((src, index) => (
-          <Image key={index} height={150} width={150} alt={`Product ${index}`} src={`/${src}`} />
-        ))}
-      </div>
       <div className="mt-5">
         <Link href="/shop">
-        <Button className="text-[#B88E2F] bg-white border border-[#B88E2F] rounded">
-          Explore More
-        </Button>
+          <Button className="text-[#B88E2F] bg-white border border-[#B88E2F] rounded">
+            Explore More
+          </Button>
         </Link>
       </div>
     </div>
@@ -31,6 +25,3 @@ const Forth = () => {
 };
 
 export default Forth;
-
-
-

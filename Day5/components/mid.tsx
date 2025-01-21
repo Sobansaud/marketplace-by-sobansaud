@@ -12,7 +12,7 @@ const Mid = () => {
           <Image key={index} height={480} width={381} alt={`Category ${index}`} src={`/${src}`} />
         ))}
       </div>
-      <ul className="flex justify-center gap-96 mt-4 font-bold text-gray-700">
+      <ul className="flex justify-center gap-24 mt-4 font-bold text-gray-700">
         <li>Dining</li>
         <li>Living</li>
         <li>Bedroom</li>
@@ -22,4 +22,3 @@ const Mid = () => {
 };
 
 export default Mid;
-

@@ -165,43 +165,44 @@ export default function Checkout() {
             </form>
           </div>
 
-          {/* Right Section - Order Summary */}
-          <div className="bg-gray-50 p-8 rounded-lg border shadow-md space-y-6">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Order Summary</h2>
+           {/* Right Section - Order Summary */}
+<div className="bg-gray-50 p-6 md:p-8 rounded-lg border shadow-md space-y-6">
+  <h2 className="text-2xl font-semibold text-gray-900 mb-4">Order Summary</h2>
 
-            {/* Product Details */}
-            {cart.length > 0 ? (
-              <div className="mb-6">
-                {cart.map((item, index) => (
-                  <div key={index} className="flex justify-between mb-4">
-                    <div className="flex items-center">
-                      <Image
-                        src={item.image} // Ensure you have image data in your cart item
-                        alt={item.name}
-                        width={50}
-                        height={50}
-                        className="object-cover rounded-md"
-                      />
-                      <span className="ml-2 text-gray-700 font-medium">{item.name}</span>
-                    </div>
-                    <div className="flex justify-between w-48">
-                      <span className="text-gray-500">Qty: {item.quantity}</span>
-                      <span className="text-gray-500">${parseFloat(item.price) * item.quantity}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <p className="text-gray-500">Your cart is empty.</p>
-            )}
+  {/* Product Details */}
+  {cart.length > 0 ? (
+    <div className="mb-6">
+      {cart.map((item, index) => (
+        <div key={index} className="flex flex-col md:flex-row justify-between mb-4">
+          <div className="flex items-center">
+            <Image
+              src={item.image} // Ensure you have image data in your cart item
+              alt={item.name}
+              width={50}
+              height={50}
+              className="object-cover rounded-md"
+            />
+            <span className="ml-2 text-gray-700 font-medium">{item.name}</span>
+          </div>
+          <div className="flex justify-between w-full md:w-48 mt-2 md:mt-0">
+            <span className="text-gray-500">Qty: {item.quantity}</span>
+            <span className="text-gray-500">${parseFloat(item.price) * item.quantity}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  ) : (
+    <p className="text-gray-500">Your cart is empty.</p>
+  )}
 
-            <hr className="border-gray-300 mb-6" />
+  <hr className="border-gray-300 mb-6" />
 
-            {/* Total Price */}
-            <div className="flex justify-between font-semibold text-lg mb-4 text-black">
-              <span>Total</span>
-              <span>${totalPrice.toFixed(2)}</span>
-            </div>
+  {/* Total Price */}
+  <div className="flex justify-between font-semibold text-lg mb-4 text-black">
+    <span>Total</span>
+    <span>${totalPrice.toFixed(2)}</span>
+  </div>
+
 
 
           
@@ -262,3 +263,22 @@ export default function Checkout() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
