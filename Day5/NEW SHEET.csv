@@ -1,0 +1,45 @@
+Column 1,Column 2,Column 3,Column 4,Column 5,Column 6,Column 7,Column 8,Column 9
+,,,,,,,,
+Test Case Id,Test Case Description,Test Steps,Expected Result,ACTUAL RESULT,STATUS,Severity Level,Assigned To,Remarks
+TC10001,Test Product Listing Page,Navigate to Shop page.,,,,,,
+,,Verify all products are displayed.,All Products Should Be Displayed With,Products Are Displayed with All Things Correctly,PASSED,MEDIUM,SOBAN SAUD,All Products Are Listed Correctly Without Loading Page
+,,,"Title, Images ,Description,tags and Badge",,,,,
+,,,,,,,,
+TC10002,Test Dynamic Product Page,Click AnyOne Products On Shop Page ,Page should display correct product info ,Product Page And All Details Load Correctly,PASSED,LOW,SOBAN SAUD,All Products Should Dynamically Display
+,,Verify page renders correctly,dynamically,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+TC10003,Test that a product is added to the cart correctly,Navigate to a product page.,The cart should contain the product,The product is added to the ,PASSED,MEDIUM,SOBAN SAUD,Ensure the product details are correctly added.
+ ,,Click add to cart button ,"with correct details (name, price, quantity)."," cart with correct details: name, price, and image.",,,,
+ ,,and show the product add to cart.,,,,,,
+  ,,,,,,,,
+TC10004,Test that a product can be removed from the cart.,Add a product to the cart.,The cart should be updated and .,"The product is removed successfully, and",PASSED,MEDIUM,SOBAN SAUD,Check If The Product Is Removed From Cart.
+,,"Click on the ""Remove"" button next to the product.",the product should no longer appear.,the cart count is updated accordingly,,,,
+,,Verify that the product is removed from the cart.,,,,,,
+,,,,,,,,
+TC10005,Test Wishlist Functionality, Click 'Add to Wishlist In Shop Page ,Product should appear in wishlist,Product was successfully added to wishlist,PASSED,LOW,SOBAN SAUD ,Product Add TO WishList Page
+,,Product Added To The Heart Icon In Navbar,,,,,,
+,,Click Heart And Open WishList Page,,,,,,
+,,,,,,,,
+TC10006,Test Comparison Page Functionality,Click Add To Compare In Shop Page,Product Added In Comparison Page With,Product Was Successfully Added,PASSED,LOW,SOBAN SAUD,Product Add to Compare Page
+,,Product Added To Compare Page,"Title, Images And Description",,,,,
+,,Click Any Product And Show Compare Button And ,,,,,,
+,,Click To Open Comparison Page,,,,,,
+,,,,,,,,
+TC10007,Test Pagination Work Correctly,Scroll to the bottom of the shop page,"Pagination should work correctly ,",Pagination is working as expected,PASSED,LOW,SOBAN SAUD,Pagination Is Work Correctly
+,,Navigate between pages,displaying correct products,,,,,
+,,,,,,,,
+TC10008,Test Price Filter Edge Cases,Set price filter to extreme values,Only products within the exact price,Price Filter Is Working Correctly,PASSED,LOW,SOBAN SAUD,Price Filter Is work Best And Show Product With Price
+,,Verify displayed products, range should appear,,,,,
+,,,,,,,,
+TC10009,Test Order Summary Display,Add products to cart,Order summary should display correct,Order summary appears correctly,PASSED,HIGH,SOBAN SAUD,Order Summary Is work Correctly
+,,Proceed To Checkout,product details and total price,,,,,
+,,Verify order summary,,,,,,
+,,,,,,,,
+TC10010,Test Checkout Page Loads,Product Add To Cart And Go to Cart Page ,Checkout page should load without errors,Checkout page loads correctly,PASSED,LOW,SOBAN SAUD,Checkout Page Works Correctly
+,,Click Proceed To Checkout,,,,,,
+,,Navigate To Checkout Page,,,,,,
+,,,,,,,,
+TC10011,Test Responsiveness,All Pages In This Website Are Responsive ,All pages are work with responsiveness,All Pages Are Responsive And PIxel Perfect,PASSED,LOW,SOBAN SAUD,
+,,"Check All Pages Include Homepage, Shoppage,etc",,,,,,
